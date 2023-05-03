@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Captura eventos</title>
+
+<body>
+	<p onclick="parrafoPulsado()">Un párrafo (mirar consola para ver eventos)</p>
+	<table>
+		<tr>
+			<th>Tabla 1</th>
+		</tr>
+		<tr>
+			<td>
+				<p onclick="parrafoPulsado()">Párrafo1</p>
+				<p onclick="parrafoPulsado()">Párrafo2</p>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>Tabla 2</th>
+		</tr>
+		<tr>
+			<td>
+				<p onclick="parrafoPulsado(); parrafoPulsadoTabla2()">Párrafo1</p>
+				<p onclick="parrafoPulsado(); parrafoPulsadoTabla2()">Párrafo2</p>
+			</td>
+		</tr>
+	</table>
+	<script src="./js/code.js"></script>
+</body>
+
+
+
+</html>
